@@ -1,16 +1,67 @@
-## Hi there 👋
+# Hi, I'm BBact 👋
 
-<!--
-**bbact/bbact** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+欢迎来到我的 GitHub 作品集！  
+这里展示了我的两个核心项目，覆盖 **嵌入式设备数据处理、实时流计算、离线分析与可视化**。
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 项目 1：Edge-to-Cloud 实时监控系统
+
+**技术栈**：Python | Kafka | Flink | Redis | Docker
+
+**项目简介**：
+模拟嵌入式设备数据采集，通过 Kafka 实现实时数据传输，Flink 对数据进行实时异常检测，并将告警状态存入 Redis。
+
+**核心功能**：
+- 边缘设备模拟周期性上报温度数据
+- Kafka 消息队列解耦数据生产与消费
+- Flink 实时流处理进行异常检测
+- Redis 保存异常设备告警状态
+
+**项目结构**：
+edge-cloud-demo/
+├── edge/ # 边缘侧设备数据模拟
+├── flink/ # 实时计算与告警逻辑
+├── docker-compose.yml # Kafka / Redis 部署
+└── README.md
+
+**展示截图**：
+![Edge-to-Cloud Demo](https://user-images.githubusercontent.com/你的截图链接/edge_demo.png)
+
+**仓库链接**：[edge-cloud-demo](https://github.com/bbact/edge-cloud-demo)
+
+---
+
+## 🚀 项目 2：嵌入式设备离线分析系统
+
+**技术栈**：Python | Pandas | Spark | Matplotlib / Seaborn
+
+**项目简介**：
+生成设备历史日志，进行离线统计分析，找出故障设备的共性特征，并生成可视化健康报告。
+
+**核心功能**：
+- 生成模拟设备日志（温度、电压、故障标记）
+- 离线分析故障设备特征
+- 输出箱型图可视化报告
+
+**项目结构**：
+embedded-offline-analysis/
+├── data/ # 模拟日志
+├── scripts/ # 日志生成与分析脚本
+├── reports/ # 可视化图表
+└── README.md
+
+**展示截图**：
+![Offline Analysis](https://user-images.githubusercontent.com/你的截图链接/offline_report.png)
+
+**仓库链接**：[embedded-offline-analysis](https://github.com/bbact/embedded-offline-analysis)
+
+---
+
+## 📂 技能覆盖
+
+- **嵌入式设备数据采集与模拟**
+- **消息队列与实时流处理（Kafka + Flink）**
+- **告警状态管理（Redis）**
+- **离线数据分析与可视化（Pandas / Spark / Matplotlib）**
+- **Docker 部署与工程化管理**
